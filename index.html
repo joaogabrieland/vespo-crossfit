@@ -497,6 +497,34 @@
     color: var(--cinza);
   }
 
+  .preco-item { margin-bottom: 4px; }
+
+  .preco-item .preco-linha { margin-bottom: 2px; }
+
+  .preco-legenda {
+    color: var(--cinza-escuro);
+    font-size: 0.82rem;
+    margin: 0 0 7px;
+  }
+
+  .kids-info { list-style: none; margin: 14px 0 4px; }
+
+  .kids-info li {
+    color: var(--cinza);
+    font-size: 0.94rem;
+    padding: 4px 0;
+  }
+
+  .kids-opcao-titulo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--amarelo);
+    font-size: 0.92rem;
+    margin-bottom: 4px;
+  }
+
   .beneficios { list-style: none; margin-top: 20px; }
 
   .beneficios li {
@@ -829,7 +857,7 @@
       </nav>
 
       <div class="hero-miolo">
-        <p class="etiqueta hero-chapeu">Cross · Hyrox · LPO · Cross Kids — Maringá, PR</p>
+        <p class="etiqueta hero-chapeu">Cross · Ginástica · Hyrox · LPO · Cross Kids — Maringá, PR</p>
 
         <h1 class="hero-titulo">
           Muito além<br>
@@ -870,9 +898,18 @@
       </article>
 
       <article class="card">
-        <div class="card-foto" style="background-image:url('assets/hyrox.jpg')"></div>
+        <div class="card-foto" style="background-image:url('assets/ginastica.jpg')"></div>
         <div class="card-texto">
           <span class="card-num">02</span>
+          <h3 class="card-titulo">Ginástica</h3>
+          <p class="card-desc">Domínio do próprio corpo — mobilidade, controle e força que sustentam todos os treinos.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-foto" style="background-image:url('assets/hyrox.jpg')"></div>
+        <div class="card-texto">
+          <span class="card-num">03</span>
           <h3 class="card-titulo">Hyrox</h3>
           <p class="card-desc">Clube Oficial HYROX — metodologia oficial pra evoluir sua performance, dia após dia.</p>
         </div>
@@ -881,7 +918,7 @@
       <article class="card">
         <div class="card-foto" style="background-image:url('assets/lpo.jpg')"></div>
         <div class="card-texto">
-          <span class="card-num">03</span>
+          <span class="card-num">04</span>
           <h3 class="card-titulo">LPO</h3>
           <p class="card-desc">Técnica, força e potência no Levantamento de Peso Olímpico — do aprendizado à competição.</p>
         </div>
@@ -890,7 +927,7 @@
       <article class="card">
         <div class="card-foto" style="background-image:url('assets/kids.jpg')"></div>
         <div class="card-texto">
-          <span class="card-num">04</span>
+          <span class="card-num">05</span>
           <h3 class="card-titulo">Cross Kids</h3>
           <p class="card-desc">Coordenação, equilíbrio e força pras crianças — de forma divertida e segura.</p>
         </div>
@@ -944,6 +981,7 @@
       <div class="horarios-grupo">
         <p class="horarios-grupo-titulo">Aulas específicas / técnica</p>
         <div class="horarios-lista">
+          <div class="linha"><span class="modal">Ginástica</span><span class="pontos"></span><span class="horas">terça e quinta às 19h30</span></div>
           <div class="linha"><span class="modal">LPO</span><span class="pontos"></span><span class="horas">terça a sexta às 18h30</span></div>
           <div class="linha"><span class="modal">Hyrox</span><span class="pontos"></span><span class="horas">segunda, quarta e sexta às 6h e 19h30</span></div>
         </div>
@@ -968,6 +1006,7 @@
         <span class="pill">✓ Cross</span>
         <span class="pill">✓ LPO</span>
         <span class="pill">✓ Hyrox</span>
+        <span class="pill">✓ Ginástica</span>
       </div>
     </div>
 
@@ -975,8 +1014,18 @@
       <div class="preco-card">
         <p class="etiqueta">Plano</p>
         <h3 class="bloco-titulo">Mensal</h3>
-        <div class="preco-linha"><span class="nome">Starter <small>(3x + sáb.)</small></span><span class="pontos"></span><span class="preco-valor">R$265</span></div>
-        <div class="preco-linha"><span class="nome">Open Box</span><span class="pontos"></span><span class="preco-valor">R$405</span></div>
+        <div class="preco-item">
+          <div class="preco-linha"><span class="nome">Starter <small>(3x + sáb.)</small></span><span class="pontos"></span><span class="preco-valor">R$265</span></div>
+          <p class="preco-legenda">Até 3 treinos por semana + sábado</p>
+        </div>
+        <div class="preco-item">
+          <div class="preco-linha"><span class="nome">Performance <small>(5x + sáb.)</small></span><span class="pontos"></span><span class="preco-valor">R$315</span></div>
+          <p class="preco-legenda">1 treino por dia + sábado</p>
+        </div>
+        <div class="preco-item">
+          <div class="preco-linha"><span class="nome">Open Box ilimitado</span><span class="pontos"></span><span class="preco-valor">R$405</span></div>
+          <p class="preco-legenda">Check-ins ilimitados + sábado</p>
+        </div>
         <ul class="beneficios">
           <li class="sim">Sem fidelidade</li>
           <li class="sim">Cancelamento livre</li>
@@ -990,7 +1039,8 @@
         <p class="etiqueta">Plano</p>
         <h3 class="bloco-titulo">Semestral parcelado</h3>
         <div class="preco-linha"><span class="nome">Starter <small>(3x + sáb.)</small></span><span class="pontos"></span><span class="preco-valor">R$245<small>/mês</small></span></div>
-        <div class="preco-linha"><span class="nome">Open Box</span><span class="pontos"></span><span class="preco-valor">R$285<small>/mês</small></span></div>
+        <div class="preco-linha"><span class="nome">Performance <small>(5x + sáb.)</small></span><span class="pontos"></span><span class="preco-valor">R$285<small>/mês</small></span></div>
+        <div class="preco-linha"><span class="nome">Open Box ilimitado</span><span class="pontos"></span><span class="preco-valor">R$315<small>/mês</small></span></div>
         <ul class="beneficios">
           <li class="sim">30 dias de férias</li>
           <li class="sim">Valor total parcelado em até 6x (consome limite do cartão)</li>
@@ -1004,7 +1054,8 @@
         <span class="tarja-mini">Mais vantagens</span>
         <h3 class="bloco-titulo" style="margin-top: 14px;">Anual recorrente</h3>
         <div class="preco-linha"><span class="nome">Starter <small>(3x + sáb.)</small></span><span class="pontos"></span><span class="preco-valor">R$225<small>/mês</small></span></div>
-        <div class="preco-linha"><span class="nome">Open Box</span><span class="pontos"></span><span class="preco-valor">R$265<small>/mês</small></span></div>
+        <div class="preco-linha"><span class="nome">Performance <small>(5x + sáb.)</small></span><span class="pontos"></span><span class="preco-valor">R$265<small>/mês</small></span></div>
+        <div class="preco-linha"><span class="nome">Open Box ilimitado</span><span class="pontos"></span><span class="preco-valor">R$295<small>/mês</small></span></div>
         <ul class="beneficios">
           <li class="sim">90 dias de férias</li>
           <li class="sim">Sem taxa de adesão</li>
@@ -1019,7 +1070,47 @@
       </div>
     </div>
 
-    <p class="precos-nota">*Em caso de cancelamento antecipado, é cobrada a diferença para o plano mensal, proporcional aos meses utilizados.</p>
+    <div class="duo" style="margin-top: 20px;">
+      <div class="preco-card">
+        <p class="etiqueta">Avulso</p>
+        <h3 class="bloco-titulo">Pacotes de aulas</h3>
+        <div class="preco-item">
+          <div class="preco-linha"><span class="nome">Drop in</span><span class="pontos"></span><span class="preco-valor">R$50</span></div>
+          <p class="preco-legenda">1 treino avulso</p>
+        </div>
+        <div class="preco-item">
+          <div class="preco-linha"><span class="nome">Pacote 5 check-ins</span><span class="pontos"></span><span class="preco-valor">R$195</span></div>
+          <p class="preco-legenda">Válido por 2 meses</p>
+        </div>
+        <p class="adesao">Sem taxa de adesão</p>
+        <a class="btn-solido btn-plano" href="https://wa.me/5544991610707?text=Ol%C3%A1%21%20Tenho%20interesse%20nos%20pacotes%20de%20aulas%20da%20Vespo%20Crossfit%20%F0%9F%90%9D">Quero esse pacote →</a>
+      </div>
+
+      <div class="preco-card">
+        <p class="etiqueta">Cross Kids</p>
+        <h3 class="bloco-titulo">Planos Cross Kids</h3>
+        <ul class="kids-info">
+          <li>Terça, quinta e sexta às 18h30</li>
+          <li>Crianças de 07 aos 11 anos</li>
+          <li>Turma de 10 alunos</li>
+        </ul>
+        <div class="preco-item" style="margin-top: 6px;">
+          <p class="kids-opcao-titulo">🐝 3x na semana</p>
+          <p class="preco-legenda">Terça, quinta e sexta — 18h30</p>
+          <div class="preco-linha"><span class="nome">Mensal</span><span class="pontos"></span><span class="preco-valor">R$205<small>/mês</small></span></div>
+          <div class="preco-linha"><span class="nome">Trimestral parcelado</span><span class="pontos"></span><span class="preco-valor">R$195<small>/mês</small></span></div>
+        </div>
+        <div class="preco-item">
+          <p class="kids-opcao-titulo">🐝 2x na semana</p>
+          <p class="preco-legenda">Terça + 1 dia à escolha (quinta ou sexta) — 18h30</p>
+          <div class="preco-linha"><span class="nome">Mensal</span><span class="pontos"></span><span class="preco-valor">R$195<small>/mês</small></span></div>
+          <div class="preco-linha"><span class="nome">Trimestral parcelado</span><span class="pontos"></span><span class="preco-valor">R$165<small>/mês</small></span></div>
+        </div>
+        <a class="btn-solido btn-plano" href="https://wa.me/5544991610707?text=Ol%C3%A1%21%20Quero%20matricular%20meu%20filho(a)%20no%20Cross%20Kids%20da%20Vespo%20Crossfit%20%F0%9F%90%9D">Quero matricular →</a>
+      </div>
+    </div>
+
+    <p class="precos-nota">*Em caso de cancelamento antecipado, é cobrada a diferença para o plano mensal, proporcional aos meses utilizados. Consulte o regulamento completo na unidade.</p>
 
     <p class="precos-slogan"><span class="tarja-mini">Invista em você. Evolua na Vespo.</span></p>
   </section>
