@@ -669,7 +669,7 @@
     overflow: hidden;
     background-image: url('assets/open-day.jpg');
     background-size: cover;
-    background-position: center 62%;
+    background-position: center;
     text-decoration: none;
     font: inherit;
     color: inherit;
@@ -677,6 +677,8 @@
     cursor: pointer;
     transition: border-color 0.15s ease;
   }
+
+  @media (min-width: 901px) { .video-card { background-size: 130% auto; background-position: 42% 38%; } }
 
   .video-card::before {
     content: "";
