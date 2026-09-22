@@ -468,10 +468,13 @@
 
   .preco-linha {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
-    gap: 10px;
+    gap: 4px 10px;
     margin: 7px 0;
   }
+
+  .preco-linha .pontos { min-width: 20px; }
 
   .preco-linha .nome { color: var(--off-white); font-size: 0.98rem; white-space: nowrap; }
 
@@ -939,7 +942,7 @@
         </p>
 
         <div class="hero-botoes">
-          <a class="btn-solido" href="https://wa.me/5544991610707?text=Ol%C3%A1%21%20Quero%20agendar%20minha%20aula%20experimental%20na%20Vespo%20Crossfit%20%F0%9F%90%9D" id="btn-experimental">Agendar aula experimental →</a>
+          <a class="btn-solido" href="https://wa.me/5544991610707?text=Ol%C3%A1%21%20Quero%20agendar%20minha%20aula%20experimental%20na%20Vespo%20Crossfit%20%F0%9F%90%9D" id="btn-experimental">Aula experimental →</a>
           <a class="btn-contorno" href="#horarios">Ver horários de aula</a>
           <a class="btn-contorno" href="#open-day">Open Day</a>
         </div>
@@ -1273,7 +1276,7 @@
           </g>
           <path d="M-20 250 L720 130" stroke="#4a4234" stroke-width="9" stroke-linecap="round"/>
           <path d="M-20 250 L720 130" stroke="#6b6045" stroke-width="1" stroke-dasharray="10 8" stroke-linecap="round"/>
-          <text x="420" y="215" fill="#6b6b66" font-family="Barlow Condensed, sans-serif" font-size="15" letter-spacing="2" transform="rotate(-11 420 215)">AV. COLOMBO</text>
+          <text x="350" y="215" text-anchor="middle" fill="#6b6b66" font-family="Barlow Condensed, sans-serif" font-size="15" letter-spacing="2" transform="rotate(-11 350 215)">AV. COLOMBO</text>
           <circle cx="401" cy="171" r="7" fill="none" stroke="#F5C518" stroke-width="2" opacity="0.55"/>
           <path d="M401 143 c-15 0 -27 12 -27 27 c0 20 27 46 27 46 s27 -26 27 -46 c0 -15 -12 -27 -27 -27 Z" fill="#F5C518"/>
           <circle cx="401" cy="169" r="9" fill="#121110"/>
